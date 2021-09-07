@@ -1,0 +1,11 @@
+ion-content.background {
+
+    --ion-background-color:#41379e;
+}
+
+ion-toolbar.toolbar {
+    --ion-background-color:#262250;
+    color: white;
+    text-align: center;
+
+}
