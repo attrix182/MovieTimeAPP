@@ -1,15 +1,16 @@
 import { useEffect, useState } from "react";
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonInput, IonItem, IonLabel } from '@ionic/react';
 
-interface ContainerProps { apellido: string }
+
+import './styles/SearchBox.css';
+
+interface ContainerProps { searchValue: string, setSearchValue: (value: string) => void }
 
 const SearchBox: React.FC<ContainerProps> = (props) => {
 
   const [palabra, setPalabra] = useState("");
 
-
-
-  const handleChange = (e: any) => setPalabra(e.target.value);
+  const handleChange = (e: any) => props.setSearchValue(e.target.value);
 
 
 
