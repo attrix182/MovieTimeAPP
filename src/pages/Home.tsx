@@ -20,7 +20,7 @@ const Home: React.FC = () => {
     const responseJson = await response.json();
 
     if (responseJson.Search) {
-      console.log(responseJson.Search);
+
       setMovies(responseJson.Search);
     }
   };
@@ -34,19 +34,24 @@ const Home: React.FC = () => {
   return (
     <IonPage>
 
+
       <IonHeader>
         <IonToolbar className="toolbar">
           <IonTitle >Movie time 🍿</IonTitle>
         </IonToolbar>
-      </IonHeader>
-      <IonContent className="background" no-scroll >
-        <IonHeader collapse="condense">
-        </IonHeader>
-   
-            <SearchBox searchValue={searchValue} setSearchValue={setSearchValue}  />
 
-            <MovieList movies={movies} />
-    
+        <div>
+
+        </div>
+      </IonHeader>
+
+      <IonContent className="background" >
+
+        <SearchBox searchValue={searchValue} setSearchValue={setSearchValue} />
+
+        <MovieList movies={movies} />
+
+
       </IonContent>
 
     </IonPage>

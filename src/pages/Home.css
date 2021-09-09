@@ -1,6 +1,6 @@
 ion-content.background {
 
-    --ion-background-color:#41379e;
+    --ion-background-color: #1c1f2cdc;
 }
 
 ion-toolbar.toolbar {
@@ -10,3 +10,7 @@ ion-toolbar.toolbar {
 
 }
 
+.search {
+    margin-top: 30%;
+  
+}

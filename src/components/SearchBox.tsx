@@ -8,20 +8,17 @@ interface ContainerProps { searchValue: string, setSearchValue: (value: string) 
 
 const SearchBox: React.FC<ContainerProps> = (props) => {
 
-  const [palabra, setPalabra] = useState("");
-
   const handleChange = (e: any) => props.setSearchValue(e.target.value);
 
 
 
   return (
-    <div className="container">
+    <div>
 
       <IonItem>
         <IonInput placeholder="Search..." onIonChange={handleChange}></IonInput>
       </IonItem>
 
-      <h1>{palabra}</h1>
 
     </div>
   );

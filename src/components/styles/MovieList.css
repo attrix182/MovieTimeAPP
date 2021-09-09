@@ -1,24 +1,15 @@
-.container {
+.pelis {
   text-align: center;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+
+  background: rgba(255, 255, 255, 0.397);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.349);
 }
 
-.container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
+.card-title {
 
-.container p {
-  font-size: 16px;
-  line-height: 22px;
-  color: #8c8c8c;
-  margin: 0;
-}
-
-.container a {
-  text-decoration: none;
+  font-size: 3vh;
 }
